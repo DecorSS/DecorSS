@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor SS Haqqımızda</title>
+    <link rel="icon" type="image/x-icon" href="../logo_icon/ss_logo_favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Üst hissə (navigation) -->
+    <button class="menu-toggle">☰</button>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../logo_icon/ss_ganja_logo.png" alt="Decor SS Ganja">
+            Decor SS Ganja
+        </div>
+        <ul class="nav-links">
+            <a href="../index.html" >Əsas Səhifə</a>
+            <a href="../Dekorlar/dekorlar.html" >Dekorlar</a>
+            <li><a href="#Haqqımızda" >Haqqımızda</a></li>
+            <li><a href="#Əlaqə">Əlaqə</a></li>
+        </ul>
+    </nav>
+</body>
+    <!-- Modal yapısı -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Haqqımızda Bölməsi -->
+    <section id="Haqqımızda" class="section">
+        <h2>Haqqımızda</h2>
+        <p>Decor SS 2025-ci ilin 1 Fevral Tarixində Gəncə Şəhərində Fəaliyyətə Başlamışdır.</p>
+            <p>İstənilən Zövqə Uyğun Dekorlar İlə Sizin Xidmətinizdədir.</p>
+    </section>
+
+    </head>
+    <!-- Əlaqə Bölməsi -->
+    <section id="Əlaqə" class="section">
+        <h2>Əlaqə</h2>
+        <p class="contact-info">Email: <a href="mailto:karimovh846@gmail.com">karimovh846@gmail.com</a></p>
+        <p class="contact-info">Əlaqə nömrəsi: <a href="tel:+994508811899">+994 50 881 18 99</a></p>
+    <!-- Sosial Medya Bölməsi -->
+    <section id="Əlaqə" class="wrapper"></section>
+        <h2>Sosial media hesablarımız:</h2>
+    <head>
+        <title>Sosyal Medya Hover Efekti</title>
+        <!-- Font Awesome bağlantısı -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+    
+        <div class="wrapper">
+            <a href="https://www.instagram.com/decor_ss_gence/" class="icon" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 28px;"></i></a>
+            <a href="https://www.linkedin.com/in/vusal-karimovh" class="icon" target="_blank"><i class="fa-brands fa-linkedin-in" style="font-size: 28px;"></i></a>
+            <a href="https://wa.me/+994508811899" class="icon" target="_blank"><i class="fa-brands fa-whatsapp" style="font-size: 28px;"></i></a>
+        </div>
+                
+        <form id="contact-form" action="submit-form.php" method="POST">
+            <input type="text" name="name" placeholder="Adınız" required>
+            <input type="email" name="email" placeholder="Sizin Email" required>
+            <textarea name="message" placeholder="Mesaj" required></textarea>
+            <button type="submit">Göndər</button>
+        </form>
+    </section>
+</body>
+</html>
