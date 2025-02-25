@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor SS Dekorlar</title>
+    <link rel="icon" type="image/x-icon" href="../logo_icon/ss_logo_favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Üst hissə (navigation) -->
+    <button class="menu-toggle">☰</button>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../logo_icon/ss_ganja_logo.png" alt="Decor SS Ganja">
+            Decor SS Ganja
+            <meta property="og:image" content="/images/ss_ganja_logo.png">
+            <meta property="og:title" content="Decor SS Ganja">
+        </div>
+        <ul class="nav-links">
+            <a href="../index.html">Əsas Səhifə</a>
+            <a href="#Dekorlar">Dekorlar</a>
+            <a href="../Haqqımızda\haqqımızda.html">Haqqımızda</a>
+            <li><a href="#Əlaqə">Əlaqə</a></li>
+            <li><a href="#Səbət">Səbət</a></li>
+            <a href="#Rezervasiya" class="book-now-btn">Rezervasiya</a>
+        </ul>
+    </nav>
+
+    <!-- Giriş bölməsi -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <meta name="description" content="Decor SS Ganja - Zövqünüzə uyğun dekorlar!">
+            <h1>Decor SS Dekorları</h1>
+            <p>Gəncə Şəhərində İstənilən zövqə uyğun Dekorlar.</p>
+        </div>
+    </section>
+
+    <!-- Dekorlar Bölməsi -->
+    <section id="Dekorlar" class="section">
+        <h2>Dekorlar</h2>
+        <div class="product-grid">
+            <!-- Product Items -->
+            <meta name="keywords" content="dekor, gəncə dekor, nişan dekoru, toy dekoru">
+            <div class="product-item">
+                <img src="dekor_1.png" alt="Product 1" class="product-image">
+                <h3>Nişan Dekoru 1</h3>
+                <p>₼ 60.00</p>
+                <button>Əlavə et</button>
+            </div>
+            <div class="product-item">
+                <img src="dekor_2.png" alt="Product 2" class="product-image">
+                <h3>Nişan Dekoru 2</h3>
+                <p>₼ 70.00</p>
+                <button>Əlavə et</button>
+            </div>
+            <div class="product-item">
+                <img src="dekor_3.png" alt="Product 3" class="product-image">
+                <h3>Nişan Dekoru 3</h3>
+                <p>₼ 50.00</p>
+                <button>Əlavə et</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- Səbət Bölməsi -->
+    <section id="Səbət" class="add-to-cart">
+        <h2>Səbət</h2>
+        <div id="cart-items"></div>
+        <p>Cəmi: ₼ <span id="cart-total">0.00</span></p>
+        <button id="checkout">Ödəniş</button>
+    </section>
+
+    <!-- Modal yapısı -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+</head>
+<!-- Əlaqə Bölməsi -->
+<section id="Əlaqə" class="section">
+    <h2>Əlaqə</h2>
+    <p class="contact-info">Email: <a href="mailto:karimovh846@gmail.com">karimovh846@gmail.com</a></p>
+    <p class="contact-info">Əlaqə nömrəsi: <a href="tel:+994508811899">+994 50 881 18 99</a></p>
+<!-- Sosial Medya Bölməsi -->
+<section id="Əlaqə" class="wrapper"></section>
+    <h2>Sosial media hesablarımız:</h2>
+    <title>Sosyal Medya Hover Efekti</title>
+    <!-- Font Awesome bağlantısı -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <a href="https://www.instagram.com/decor_ss_gence/" class="icon" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 28px;"></i></a>
+        <a href="https://www.linkedin.com/in/vusal-karimovh" class="icon" target="_blank"><i class="fa-brands fa-linkedin-in" style="font-size: 28px;"></i></a>
+        <a href="https://wa.me/+994508811899" class="icon" target="_blank"><i class="fa-brands fa-whatsapp" style="font-size: 28px;"></i></a>
+    </div>
+            
+    <form id="contact-form" action="submit-form.php" method="POST">
+        <input type="text" name="name" placeholder="Adınız" required>
+        <input type="email" name="email" placeholder="Sizin Email" required>
+        <textarea name="message" placeholder="Mesaj" required></textarea>
+        <button type="submit">Göndər</button>
+    </form>
+</section>
+
+<!-- Rezervasiya Bölməsi -->
+<section id="Rezervasiya" class="section">
+    <h2>Rezervasiya</h2>
+    <form id="booking-form">
+        <input type="text" placeholder="Adınız" required>
+        <input type="email" placeholder="Sizin Email" required>
+        <input type="date" required>
+        <input type="time" required>
+        <button type="submit">Göndər</button>
+    </form>
+</section>
+</body>
+</html>
