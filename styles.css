@@ -174,13 +174,13 @@ h1 {
 
 /* Səbət */
 .add-to-cart {
-	font-size: 1.27rem; /* Yazı boyutunu büyüt */
-    font-family: 'Syne', serif; /* Yazı tipini değiştir */
-    padding: 2rem 2rem; /* Yazıyla yukarıdaki görsele aralığı */
-    color: #1F3A4D; /* Yazı rengi */
-    font-weight: bold; /* Yazıyı kalın yap */
-    text-align: center;
-    margin-bottom: 0.1rem; /* Alt boşluk ekle */
+	font-size: 1.40rem; /* Yazı boyutunu büyüt */
+	font-family: 'Syne', serif; /* Yazı tipini değiştir */
+	padding: 2rem 2rem; /* Yazıyla yukarıdaki görsele aralığı */
+	color: #1F3A4D; /* Yazı rengi */
+	font-weight: bold; /* Yazıyı kalın yap */
+	text-align: center;
+	margin-bottom: 0.1rem; /* Alt boşluk ekle */
 }
 
 .product-grid, .services-grid {
