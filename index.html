@@ -172,5 +172,117 @@
             <button type="submit">Göndər</button>
         </form>
     </section>
+
+    <!-- Vüsal tərəfindən yaradıldı -->
+    <div id="testPopup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h3>Məlumatlandırma Mesajı</h3>
+            <p>Saytın yeni versiyasını görmək üçün <a href="https://decorss.karimov.info/" target="_blank">https://decorss.karimov.info/</a> saytını ziyarət edin.</p>
+        </div>
+    </div>
+
+    <script>
+        // Popup'ı sayfa yüklendiğinde göster
+        window.addEventListener('load', function() {
+            document.getElementById('testPopup').style.display = 'block';
+        });
+
+        // Popup'ı kapatma fonksiyonu
+        function closePopup() {
+            document.getElementById('testPopup').style.display = 'none';
+        }
+
+        // Kapatma düğmesine tıklama olayı
+        document.querySelector('.popup-close').addEventListener('click', closePopup);
+
+        // Popup dışına tıklayınca kapatma
+        document.getElementById('testPopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePopup();
+            }
+        });
+    </script>
+
+    <style>
+        /* Popup Stilleri */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            animation: slideIn 0.3s ease-in-out;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #aaa;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .popup-close:hover {
+            color: #000;
+        }
+
+        .popup-content h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 24px;
+        }
+
+        .popup-content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+            to { 
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        /* Responsive tasarım */
+        @media (max-width: 480px) {
+            .popup-content {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+    </style>
 </body>
 </html>
